@@ -1,0 +1,110 @@
+{
+    "extName": {
+        "message": "Bubble New Tab"
+    },
+    "extDescription": {
+        "message": "⭐ A minimalist and aesthetically pleasing new tab extension that seamlessly interacts with the omnibox."
+    },
+    "internetError": {
+        "message": "Internet connection failed"
+    },
+    "hitokotoError": {
+        "message": "Temporarily unable to get hitokoto"
+    },
+    "formTip": {
+        "message": "Tip: Leave Icon blank to automatically get the icon. \n     Please end the Url with the keyword parameter name and its connector"
+    },
+    "submit": {
+        "message": "Submit"
+    },
+    "searchList1": {
+        "message": "Currently set "
+    },
+    "searchList2": {
+        "message": " search engines"
+    },
+    "edit": {
+        "message": "Edit"
+    },
+    "delete": {
+        "message": "Delete"
+    },
+    "deleteSuccess": {
+        "message": "Delete successful!"
+    },
+    "addSuccess": {
+        "message": "Add successful!"
+    },
+    "editSuccess": {
+        "message": "Edit successful!"
+    },
+    "keyExist": {
+        "message": "The key already exists!"
+    },
+    "fold": {
+        "message": "Fold"
+    },
+    "unfold": {
+        "message": "Unfold"
+    },
+    "setting": {
+        "message": "Setting:"
+    },
+    "userName": {
+        "message": "User Name"
+    },
+    "userNameDesc": {
+        "message": "Please enter your user name"
+    },
+    "searchENginesList": {
+        "message": "Search Engine List"
+    },
+    "add": {
+        "message": "Add"
+    },
+    "weatherApi": {
+        "message": "Weather API"
+    },
+    "weatherApiDesc": {
+        "message": "Please enter the weather API"
+    },
+    "weatherCard": {
+        "message": "Weather Card"
+    },
+    "weatherCardDesc": {
+        "message": "Whether to display the weather card"
+    },
+    "hitokotoCard": {
+        "message": "Hitokoto Card"
+    },
+    "hitokotoCardDesc": {
+        "message": "Whether to display the hitokoto card"
+    },
+    "searchSuggest": {
+        "message": "Search Suggest"
+    },
+    "searchSuggestDesc": {
+        "message": "Whether to display search suggestions"
+    },
+    "about": {
+        "message": "About"
+    },
+    "aboutDesc": {
+        "message": "About Bubble New Tab"
+    },
+    "bookmark": {
+        "message": "Bookmark"
+    },
+    "download": {
+        "message": "Download"
+    },
+    "history": {
+        "message": "History"
+    },
+    "greetText": {
+        "message": "More Greetings"
+    },
+    "greetTextDesc": {
+        "message": "The greeting will change depending on the time of day"
+    }
+}

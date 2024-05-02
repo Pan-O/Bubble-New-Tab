@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Description" content="简约且美观的新选项卡">
+    <title>Bubble</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/newtab.css">
+    <link rel="stylesheet" href="assets/css/weather-icon.css">
+    <link rel="stylesheet" href="assets/css/icon.css">
+    <link rel="icon" href="assets/images/icon-32.png">
+    <script src="libs/chart.umd.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column hidden">
+            <div class="setting-card card">
+                <h2 data-i18n="setting">设置：</h2>
+                <div class="setting-close-btn">
+                    <i class="iconfont icon-close"></i>
+                </div>
+                <div class="card-item weather-key">
+                    <div class="card-head">
+                        <div class="setting-title" data-i18n="userName">名称</div>
+                        <div class="setting-desc weather-key-desc" data-i18n="userNameDesc">在这里输入你的名称</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="inputGroup">
+                            <input type="text" required="" autocomplete="off" class="card-input" id="user-name-input">
+                            <label>Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item search-engines">
+                    <div class="card-head">
+                        <div class="setting-title" data-i18n="searchEnginesList">搜索引擎列表</div>
+                        <div class="setting-desc search-desc"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="setting-button show-list" data-i18n="unfold">展开</div>
+                        <div class="setting-button add-search" data-i18n="add">添加</div>
+                    </div>
+                </div>
+                <div class="card-item search-engines-list" style="display: none;">
+                </div>
+                <div class="card-item weather-key">
+                    <div class="card-head">
+                        <div class=" setting-title" data-i18n="weatherApi">天气API</div>
+                        <div class="setting-desc weather-key-desc" data-i18n="weatherApiDesc">在这里输入你的天气API</div>
+                    </div>
+                    <div class="card-content">
+                        <div class=" inputGroup">
+                            <input type="text" required="" autocomplete="off" class="card-input" id="weather-key-input">
+                            <label>API</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-item setting-weather-card">
+                    <div class="card-head">
+                        <div class="setting-title" data-i18n="weatherCard">天气卡片</div>
+                        <div class="setting-desc" data-i18n="weatherCardDesc">是否显示天气卡片</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="input-checkbox">
+                            <input class="switch" type="checkbox" class="card-checkbox" id="weather-card-checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item setting-hitokoto-card">
+                    <div class="card-head">
+                        <div class="setting-title" data-i18n="hitokotoCard">一言卡片</div>
+                        <div class="setting-desc" data-i18n="hitokotoCardDesc">是否显示一言卡片</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="input-checkbox">
+                            <input class="switch" type="checkbox" class="card-checkbox" id="hitokoto-card-checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-head">
+                        <div class="setting-title" data-i18n="searchSuggest">搜索建议</div>
+                        <div class="setting-desc" data-i18n="searchSuggestDesc">是否启用搜索建议</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="input-checkbox">
+                            <input class="switch" type="checkbox" class="card-checkbox" id="search-suggest-checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-head">
+                        <div class="setting-title" data-i18n="greetText">更多问候语</div>
+                        <div class="setting-desc" data-i18n="greetTextDesc">问候语将根据不同时间变化</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="input-checkbox">
+                            <input class="switch" type="checkbox" class="card-checkbox" id="greetText-checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-item about">
+                    <div class="card-head">
+                        <div class="setting-title" data-i18n="about">关于</div>
+                        <div class="setting-desc" data-i18n="aboutDesc">关于Bubble起始页</div>
+                    </div>
+                </div>
+                <div class="card-item about-content hidden" style="display: none;">
+                    <img title="Bubble" src="assets/images/icon-128.png">
+                    <div class="about-text">
+                        <p>Bubble起始页是一个简约且美观的新选项卡扩展，可与多功能框无缝交互</p>
+                        <p>个人练手作品，已开源在Github <a href="https://github.com/Pan-O/bubble-new-tab/" target="_blank"
+                                rel="noopener">Bubble New Tab</a></p>
+                        <p>Contract Me:<a href="https://panp.cc" target="_blank" rel="noopener">Blog</a> / <a
+                                href="mailto:cool.panjianhao@gmail.com" target="_blank" rel="noopener">E-Mail</a></p>
+                        <p><a href="https://github.com/Pan-O/bubble-new-tab/blob/master/README.md" target="_blank" rel="noopener">使用帮助</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card hello-card animation-float">
+                <div class="time-img-show animate__animated animate__bounceIn">
+                    <img class="time-img" title="Time" src="assets/images/icons/time/sun.svg">
+                </div>
+                <div class="greet-container">
+                    <div class="greet">
+                        <span class="greet-content">Hello!</span>
+                        <span class="user-name">Name</span>
+                        <div class="greet-text">It's good to see you again.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card time-card">
+                <div class="time-card-container">
+                    <div class="time-info">
+                        <div class="date">
+                            <div class="month"></div>
+                            <div class="week"></div>
+                            <div class="day"></div>
+                        </div>
+                        <div class="clock">
+                            <div class="hour"></div>:
+                            <div class="minute"></div>
+                        </div>
+                    </div>
+                    <div class="weather animation-float animation-active-scale">
+                        <div class="weather-icon"><i class="iconfont icon-cloudy"></i></div>
+                        <div class="weather-temp">None℃</div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-card hidden">
+                <div class="weather-head">
+                    <div class="weather-title">
+                        <i class="iconfont icon-location"></i>
+                        <div class="weather-city"></div>
+                    </div>
+                    <div class="card-buttons weather-btn">
+                        <div class="show-weather card-button ">
+                            <i class="iconfont icon-right"></i>
+                        </div>
+                        <div class="refresh-weather card-button hidden btn-in">
+                            <i class="iconfont icon-refresh"></i>
+                        </div>
+                        <div class="close-weather card-button hidden btn-in">
+                            <i class="iconfont icon-close"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" weather-card">
+                    <div class="weather-main">
+                        <div class="weather-temp"></div>
+                        <div class="weather-text"></div>
+                    </div>
+                    <div class="weather-info">
+                        <div class="weather-item">
+                            <i class="iconfont icon-wind"></i>
+                            <div class="weather-value"></div>
+                        </div>
+                        <div class="weather-item">
+                            <i class="iconfont icon-humidity"></i>
+                            <div class="weather-value"></div>
+                        </div>
+                        <div class="weather-item">
+                            <i class="iconfont icon-time"></i>
+                            <div class="weather-value"></div>
+                        </div>
+                    </div>
+                    <img title="weather" src="./assets/images/icons/weather/icon-cloudy.svg" class="weather-background">
+                </div>
+                <div class="all-weather-card hidden">
+                    <div class="all-weather-card-container">
+                        <div class="weather-info">
+                            <div class="weather-detail">
+                            </div>
+                            <div id="chartContainer">
+                                <canvas id="temperatureChart"></canvas>
+                            </div>
+                            <div class="weather-detail">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card search-bar animation-scale">
+                <div class="search-info">
+                    <div class="search-icon animation-float"></div>
+                    <div class="search-name animation-float"></div>
+                </div>
+                <input class="animation-scale" type="text" id="search" placeholder="Let's search for something :D">
+                <div class="search-suggestion hidden"></div>
+                <div class="search-btn"><i class="iconfont icon-search"></i></div>
+            </div>
+            <div class="card tool-card">
+                <div class="tool-container">
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="iconfont icon-bookmark"></i>
+                        </div>
+                        <div class="tooltip">
+                            <span data-i18n="bookmark">书签</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="iconfont icon-download"></i>
+                        </div>
+                        <div class="tooltip">
+                            <span data-i18n="download">下载</span>
+                        </div>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="iconfont icon-history"></i>
+                        </div>
+                        <div class="tooltip">
+                            <span data-i18n="history">历史</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card hitokoto-card hidden">
+                <div class="hitokoto-container">
+                    <div class="hitokoto-text animation-active-scale animation-scale"></div>
+                    <div class="hitokoto-from"></div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="dark-btn">
+                    <img title="dark-mode" class="light-img hidden rotate-bounce" src="/assets/images/light.png">
+                    <img title="light-mode" class="dark-img hidden rotate-bounce" src="/assets/images/dark.png">
+                </div>
+                <div class="setting-btn">
+                    <span>Setting</span><i class="iconfont icon-setting"></i>
+                </div>
+            </div>
+        </div>
+        <script src="libs/background.js"></script>
+        <script src="libs/newtab.js"></script>
+</body>
+
+</html>

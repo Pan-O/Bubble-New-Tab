@@ -1,0 +1,110 @@
+{
+    "extName": {
+        "message": "Bubble 起始页"
+    },
+    "extDescription": {
+        "message": "⭐ 简约且美观的新选项卡扩展，可与多功能框无缝交互"
+    },
+    "internetError": {
+        "message": "网络连接失败"
+    },
+    "hitokotoError": {
+        "message": "暂时无法获得到一言"
+    },
+    "formTip": {
+        "message": "Tip: Icon留空将自动获取图标.\n     Url请以关键词参数名及其连接符结尾"
+    },
+    "submit": {
+        "message": "提交"
+    },
+    "searchList1": {
+        "message": "当前已设置"
+    },
+    "searchList2": {
+        "message": "个搜索引擎"
+    },
+    "edit": {
+        "message": "修改"
+    },
+    "delete": {
+        "message": "删除"
+    },
+    "deleteSuccess": {
+        "message": "删除成功！"
+    },
+    "addSuccess": {
+        "message": "添加成功！"
+    },
+    "editSuccess": {
+        "message": "修改成功！"
+    },
+    "keyExist": {
+        "message": "输入的Key重复了－O－"
+    },
+    "fold": {
+        "message": "隐藏"
+    },
+    "unfold": {
+        "message": "展开"
+    },
+    "setting": {
+        "message": "设置："
+    },
+    "userName": {
+        "message": "名称"
+    },
+    "userNameDesc": {
+        "message": "在这里输入你的名称"
+    },
+    "searchENginesList": {
+        "message": "搜索引擎列表"
+    },
+    "add": {
+        "message": "添加"
+    },
+    "weatherApi": {
+        "message": "天气API"
+    },
+    "weatherApiDesc": {
+        "message": "在这里输入你的天气API"
+    },
+    "weatherCard": {
+        "message": "天气卡片"
+    },
+    "weatherCardDesc": {
+        "message": "是否显示天气卡片"
+    },
+    "hitokotoCard": {
+        "message": "一言卡片"
+    },
+    "hitokotoCardDesc": {
+        "message": "是否显示一言卡片"
+    },
+    "searchSuggest": {
+        "message": "搜索建议"
+    },
+    "searchSuggestDesc": {
+        "message": "是否启用搜索建议"
+    },
+    "about": {
+        "message": "关于"
+    },
+    "aboutDesc": {
+        "message": "关于Bubble起始页"
+    },
+    "bookmark": {
+        "message": "书签"
+    },
+    "download": {
+        "message": "下载"
+    },
+    "history": {
+        "message": "历史"
+    },
+    "greetText": {
+        "message": "更多问候语"
+    },
+    "greetTextDesc": {
+        "message": "问候语将根据不同时间变化"
+    }
+}

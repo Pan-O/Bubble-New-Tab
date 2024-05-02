@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4526971 */
+  src: url('/assets/fonts/weather.woff2') format('woff2'),
+       url('/assets/fonts/weather.woff') format('woff'),
+       url('/assets/fonts/weather.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-freezing_rain:before {
+  content: "\e786";
+}
+
+.icon-dabaoyu:before {
+  content: "\e65e";
+}
+
+.icon-heavy_rain:before {
+  content: "\e65f";
+}
+
+.icon-moderate_rain:before {
+  content: "\e660";
+}
+
+.icon-fog:before {
+  content: "\e661";
+}
+
+.icon-heavy_snow:before {
+  content: "\e662";
+}
+
+.icon-cloudy:before {
+  content: "\e663";
+}
+
+.icon-thunderstorm:before {
+  content: "\e664";
+}
+
+.icon-sunny:before {
+  content: "\e665";
+}
+
+.icon-haze:before {
+  content: "\e666";
+}
+
+.icon-light_rain:before {
+  content: "\e667";
+}
+
+.icon-overcast:before {
+  content: "\e668";
+}
+
+.icon-snow:before {
+  content: "\e669";
+}
+
+.icon-sleet:before {
+  content: "\e66a";
+}
+
+.icon-shower:before {
+  content: "\e66b";
+}
+
+.icon-cold:before {
+  content: "\e784";
+}
+
+.icon-hot:before {
+  content: "\e785";
+}
+
+.icon-dust:before {
+  content: "\e60d";
+}
