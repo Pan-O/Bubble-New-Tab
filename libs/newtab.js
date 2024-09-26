@@ -1143,6 +1143,7 @@ getStorage('user-name', 'user-name-input');
 getStorage('weather-card', 'weather-card-checkbox');
 getStorage('hitokoto-card', 'hitokoto-card-checkbox');
 getStorage('search-suggest', 'search-suggest-checkbox');
+getStorage('greetText', 'greetText-checkbox');
 //获取存储的值
 function getStorage(key, inputName) {
     chrome.storage.local.get([key], function (result) {
