@@ -118,8 +118,8 @@ document.getElementsByClassName('search-suggestion')[0].addEventListener('click'
 //更新时间
 function updateDateTime() {
     let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
+    let hours = String(now.getHours()).padStart(2, '0');
+    let minutes = String(now.getMinutes()).padStart(2, '0');
     let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let clock = document.getElementsByClassName('clock')[0];
