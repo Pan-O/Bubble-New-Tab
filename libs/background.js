@@ -15,26 +15,6 @@ async function fetchSuggestions(query) {
   }
   return suggestResult;
 }
-//搜索建议
-let timerId1 = null;
-chrome.omnibox.onInputChanged.addListener((text, suggest) => {
-  clearTimeout(timerId1);
-  timerId1 = setTimeout(async () => {
-    const regex = /:(\w+)\s+(.+)/;
-    const match = text.match(regex);
-    let query;
-    if (match) {
-      query = match[2];
-    } else {
-      query = text;
-    }
-    const suggestions = await fetchSuggestions(query);
-    suggest(suggestions);
-  }, 500);
-});
-chrome.omnibox.onInputEntered.addListener((text) => {
-  handleInput(text);
-});
 //正则匹配key和内容，并传给搜索函数
 function handleInput(input) {
   const regex = /:(\w+)\s+(.+)/;
